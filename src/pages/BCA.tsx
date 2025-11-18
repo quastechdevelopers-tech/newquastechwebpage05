@@ -10,6 +10,7 @@ import {
   Code,
   Target,
   TrendingUp,
+   
   Star,
   Phone,
   Mail,
@@ -24,6 +25,7 @@ import {
   Minus,
   Database,
   Wrench,
+   ArrowRight,
   Calendar,
   MapPin,
   Laptop,
@@ -413,37 +415,92 @@ const BCA = () => {
                 </motion.div>
 
                 {/* Action Buttons */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.6 }}
-                  className="flex flex-col md:flex-row flex-wrap gap-3 md:gap-4 pt-3"
-                >
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                    className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-4 md:px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm"
-                  >
-                    <Briefcase className="w-4 h-4" />
-                    PLACEMENT REPORT
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                    className="w-full md:w-auto bg-teal-500 hover:bg-teal-600 text-white font-bold px-4 md:px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm"
-                  >
-                    <Download className="w-4 h-4" />
-                    DOWNLOAD CURRICULUM
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="w-full md:w-auto bg-teal-500 hover:bg-teal-600 text-white font-bold px-4 md:px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm"
-                  >
-                    <FileText className="w-4 h-4" />
-                    INTERVIEW QUESTIONS
-                  </motion.button>
-                </motion.div>
+              <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.6 }}
+  className="flex flex-col md:flex-row flex-wrap gap-3 md:gap-4 pt-3"
+>
+
+  {/* 1) SELECT COURSES */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-orange-500 hover:bg-orange-400 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    SELECT COURSES
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* 2) LEARN FROM EXPERTS */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-blue-600 hover:bg-blue-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    LEARN FROM EXPERTS
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* 3) PROJECTS */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-teal-500 hover:bg-teal-400 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    PROJECTS
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* ⭐ 4) MOCK & ASSESSMENT (NEW BUTTON) */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-purple-600 hover:bg-purple-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    MOCK & ASSESSMENT
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* 5) INTERVIEW CALLS */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-emerald-600 hover:bg-emerald-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    <FileText className="w-4 h-4" />
+    INTERVIEW CALLS
+  </motion.button>
+
+  {/* ⭐ 6) IS STUDENT PLACED (NEW LAST BUTTON) */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-indigo-600 hover:bg-indigo-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    <FileText className="w-4 h-4" />
+    STUDENT PLACED
+  </motion.button>
+
+</motion.div>
               </div>
 
               {/* Right Side - Counselling Form */}
@@ -780,7 +837,7 @@ const BCA = () => {
         </section>
 
         {/* Tools & Technologies Section */}
-        <section className="py-8 md:py-12 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+        {/* <section className="py-8 md:py-12 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -798,9 +855,9 @@ const BCA = () => {
               </p>
             </motion.div>
 
-            {/* Sliding Technology Logos */}
+            
             <div className="relative overflow-hidden py-8">
-              {/* Gradient overlay for fade effect */}
+          
               <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-slate-50 via-blue-50 to-transparent z-10 pointer-events-none" />
               <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-slate-50 via-blue-50 to-transparent z-10 pointer-events-none" />
               
@@ -819,7 +876,7 @@ const BCA = () => {
                 }}
                 style={{ width: "max-content" }}
               >
-                {/* BCA Program Tools */}
+              
                 {[
                   { name: "C/C++", logo: "/coursesicons/html.jpg", color: "from-blue-500 to-blue-600" },
                   { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
@@ -856,7 +913,7 @@ const BCA = () => {
                   </motion.div>
                 ))}
                 
-                {/* Duplicate set for seamless loop */}
+                
                 {[
                   { name: "Selenium", logo: "/coursesicons/html.jpg", color: "from-green-500 to-green-600" },
                   { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
@@ -893,7 +950,6 @@ const BCA = () => {
                   </motion.div>
                 ))}
                 
-                {/* Third set for extra smoothness */}
                 {[
                   { name: "Selenium", logo: "/coursesicons/html.jpg", color: "from-green-500 to-green-600" },
                   { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
@@ -932,10 +988,10 @@ const BCA = () => {
               </motion.div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Career Resources Section */}
-        <section className="py-8 md:py-12 bg-white overflow-hidden">
+         <section className="py-8 md:py-12 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               {/* Heading Left (on desktop) */}
@@ -970,7 +1026,7 @@ const BCA = () => {
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">Mock Session</h3>
-                  <p className="text-gray-600 leading-relaxed">You will get certificate after completion of program.</p>
+                 
                 </motion.div>
                 {/* LMS Learning Card */}
                 <motion.div
@@ -989,7 +1045,7 @@ const BCA = () => {
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-orange-500 transition-colors">LMS Learning</h3>
-                  <p className="text-gray-600 leading-relaxed">You will get certificate after completion of program.</p>
+                 
                 </motion.div>
                 {/* Career Support Card */}
                 <motion.div
@@ -1008,7 +1064,7 @@ const BCA = () => {
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-500 transition-colors">Career Support</h3>
-                  <p className="text-gray-600 leading-relaxed">You will get certificate after completion of program.</p>
+                  
                 </motion.div>
               </div>
             </div>
@@ -1730,7 +1786,7 @@ const BCA = () => {
                 {/* Main Title */}
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-8">
                   <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
-                    Showcase your Course Completion Certificate to Recruiters
+                    Earn Certificates Backed by High-Quality, Industry-Standard Training.
                   </span>
                 </h2>
 
@@ -1739,19 +1795,19 @@ const BCA = () => {
                   <div className="flex items-end gap-4">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" strokeWidth={2.5} />
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      Training Certificate is Govern By 12 Global Associations.
+                      Earn Certificates Backed by High-Quality, Industry-Standard Training.
                     </p>
                   </div>
                   <div className="flex items-end gap-4">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" strokeWidth={2.5} />
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      Training Certificate is Powered by "Wipro DICE ID"
+                      Verified Through Secure Digital Validation for Employer Trust.
                     </p>
                   </div>
                   <div className="flex items-end gap-4">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" strokeWidth={2.5} />
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      Training Certificate is Powered by "Verifiable Skill Credentials"
+                      Boosts Your Career Profile with Recognized and Credible Certification.
                     </p>
                   </div>
                 </div>
@@ -1825,7 +1881,7 @@ const BCA = () => {
         </section>
 
         {/* Career Opportunities */}
-        <section className="py-8 md:py-12 bg-white overflow-hidden">
+       {/* <section className="py-8 md:py-12 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -1857,7 +1913,7 @@ const BCA = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* FAQs Section - Professional */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">

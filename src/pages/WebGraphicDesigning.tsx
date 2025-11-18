@@ -9,6 +9,7 @@ import {
   Code,
   Target,
   TrendingUp,
+   ArrowRight,
   Star,
   Phone,
   Mail,
@@ -204,7 +205,7 @@ const WebGraphicDesigning = () => {
         </section>
 
         {/* Career Opportunities */}
-        <section className="py-20 bg-white">
+        {/* <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -236,7 +237,7 @@ const WebGraphicDesigning = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-blue-600  to-orange-500">

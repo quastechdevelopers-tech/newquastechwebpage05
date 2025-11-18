@@ -103,7 +103,7 @@ const Footer = () => {
 
   const certificationCourses = {
     softwareTesting: [
-      { name: "Software Testing", href: "/software-testing-training" },
+      // { name: "Software Testing", href: "/software-testing-training" },
       { name: "Manual Testing", href: "/manual-testing" },
       { name: "Selenium Automation", href: "/selenium-testing" },
       { name: "ISTQB Certification", href: "/istqb-certification" },
@@ -123,7 +123,7 @@ const Footer = () => {
     ],
     dataScienceAnalytics: [
       { name: "Data Science with Python", href: "/python-data-science" },
-      { name: "Data Analysis & Visualization", href: "/data-analysis-visualization" },
+      { name: "Data Analytics & Visualization", href: "/data-analysis-visualization" },
       { name: "Big Data Engineering", href: "/big-data-engineering" },
     ],
     otherCourses: [
@@ -153,7 +153,7 @@ const Footer = () => {
     { name: "About Us", href: "/about" },
     { name: "Placement", href: "/placement" },
     { name: "Contact Us", href: "/contact" },
-    { name: "Certificate Download", href: "#" },
+    // { name: "Certificate Download", href: "#" },
     { name: "Payment Methods", href: "#" },
     { name: "Blogs", href: "/blog" },
     { name: "Faq's", href: "#" },

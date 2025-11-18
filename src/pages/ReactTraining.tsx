@@ -27,6 +27,7 @@ import {
   Calendar,
   MapPin,
   Laptop,
+   ArrowRight,
   MessageSquare,
   GraduationCap,
   HelpCircle,
@@ -787,7 +788,7 @@ I'm interested in the React JS Development course. Please provide more details.`
         <CourseTechnologySection courseSlug="react-course" />
 
         {/* Career Resources Section */}
-        <section className="py-8 md:py-12 bg-white overflow-hidden">
+         <section className="py-8 md:py-12 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               {/* Heading Left (on desktop) */}
@@ -822,7 +823,7 @@ I'm interested in the React JS Development course. Please provide more details.`
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">Mock Session</h3>
-                  <p className="text-gray-600 leading-relaxed">You will get certificate after completion of program.</p>
+                 
                 </motion.div>
                 {/* LMS Learning Card */}
                 <motion.div
@@ -841,7 +842,7 @@ I'm interested in the React JS Development course. Please provide more details.`
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-orange-500 transition-colors">LMS Learning</h3>
-                  <p className="text-gray-600 leading-relaxed">You will get certificate after completion of program.</p>
+                 
                 </motion.div>
                 {/* Career Support Card */}
                 <motion.div
@@ -860,7 +861,7 @@ I'm interested in the React JS Development course. Please provide more details.`
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-500 transition-colors">Career Support</h3>
-                  <p className="text-gray-600 leading-relaxed">You will get certificate after completion of program.</p>
+                  
                 </motion.div>
               </div>
             </div>
@@ -1595,7 +1596,7 @@ I'm interested in the React JS Development course. Please provide more details.`
                 {/* Main Title */}
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-8">
                   <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
-                    Showcase your Course Completion Certificate to Recruiters
+                    Earn Certificates Backed by High-Quality, Industry-Standard Training.
                   </span>
                 </h2>
 
@@ -1604,19 +1605,19 @@ I'm interested in the React JS Development course. Please provide more details.`
                   <div className="flex items-end gap-4">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" strokeWidth={2.5} />
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      Training Certificate is Govern By 12 Global Associations.
+                      Earn Certificates Backed by High-Quality, Industry-Standard Training.
                     </p>
                   </div>
                   <div className="flex items-end gap-4">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" strokeWidth={2.5} />
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      Training Certificate is Powered by "Wipro DICE ID"
+                      Verified Through Secure Digital Validation for Employer Trust.
                     </p>
                   </div>
                   <div className="flex items-end gap-4">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" strokeWidth={2.5} />
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      Training Certificate is Powered by "Verifiable Skill Credentials"
+                      Boosts Your Career Profile with Recognized and Credible Certification.
                     </p>
                   </div>
                 </div>
@@ -1690,7 +1691,7 @@ I'm interested in the React JS Development course. Please provide more details.`
         </section>
 
         {/* Career Opportunities */}
-        <section className="py-8 md:py-12 bg-white overflow-hidden">
+        {/*{/* <section className="py-8 md:py-12 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -1722,7 +1723,7 @@ I'm interested in the React JS Development course. Please provide more details.`
               </div>
             </div>
           </div>
-        </section>
+        </section> */} 
 
         {/* FAQs Section - Professional */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">

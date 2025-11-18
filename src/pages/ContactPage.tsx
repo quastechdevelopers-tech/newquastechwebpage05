@@ -199,7 +199,8 @@ const ContactPage = () => {
         </div>
 
         {/* Hero Banner */}
-        <section className="relative overflow-hidden pt-20 sm:pt-24 lg:pt-28 pb-10 sm:pb-14 lg:pb-16 min-h-[460px] lg:min-h-[520px]">
+        <section className="relative overflow-hidden pt-8 sm:pt-12 lg:pt-16 pb-10 sm:pb-14 lg:pb-16 min-h-[420px] lg:min-h-[480px]">
+
           {/* Base gradients */}
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800" />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 via-transparent to-orange-900/20" />
@@ -472,23 +473,75 @@ const ContactPage = () => {
                           className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:bg-white transition-all outline-none"
                         />
                         <select
-                          name="course"
-                          value={formData.course}
-                          onChange={handleInputChange}
-                          className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:bg-white transition-all outline-none"
-                        >
-                          <option value="">Select Course</option>
-                          <option value="software-testing">
-                            Software Testing
-                          </option>
-                          <option value="full-stack">
-                            Full Stack Development
-                          </option>
-                          <option value="data-science">Data Science</option>
-                          <option value="digital-marketing">
-                            Digital Marketing
-                          </option>
-                        </select>
+  name="course"
+  value={formData.course}
+  onChange={handleInputChange}
+  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:bg-white transition-all outline-none"
+>
+  <option value="">Select Course</option>
+
+  {/* =============================== */}
+  {/*   E-CLASS COURSES               */}
+  {/* =============================== */}
+  <optgroup label="E-Class Courses">
+    <option value="SOFTWARE TESTING TRAINING">SOFTWARE TESTING TRAINING</option>
+    <option value="FULL STACK JAVA DEVELOPMENT TRAINING">FULL STACK JAVA DEVELOPMENT TRAINING</option>
+    <option value="FULL STACK PYTHON DEVELOPMENT TRAINING">FULL STACK PYTHON DEVELOPMENT TRAINING</option>
+    <option value="FULL STACK WEB DEVELOPMENT TRAINING">FULL STACK WEB DEVELOPMENT TRAINING</option>
+    <option value="JAVA DEVELOPMENT TRAINING">JAVA DEVELOPMENT TRAINING</option>
+    <option value="PYTHON DEVELOPMENT TRAINING">PYTHON DEVELOPMENT TRAINING</option>
+    <option value="WEB DESIGNING TRAINING">WEB DESIGNING TRAINING</option>
+    <option value="DATA SCIENCE WITH PYTHON">DATA SCIENCE WITH PYTHON</option>
+    <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
+  </optgroup>
+
+  {/* =============================== */}
+  {/*   DEGREE PROGRAMS               */}
+  {/* =============================== */}
+  <optgroup label="Degree Courses">
+    <option value="BCA (Bachelor of Computer Applications)">
+      BCA (Bachelor of Computer Applications)
+    </option>
+    <option value="Quastech Degree Program">Quastech Degree Program</option>
+  </optgroup>
+
+  {/* =============================== */}
+  {/*   CERTIFICATION CATEGORIES      */}
+  {/* =============================== */}
+  <optgroup label="Certification Categories">
+    <option value="Software Testing">Software Testing</option>
+    <option value="Fullstack Development">Fullstack Development</option>
+    <option value="Software Development">Software Development</option>
+    <option value="Front End Development">Front End Development</option>
+    <option value="Data Science & Analytics">Data Science & Analytics</option>
+    <option value="Big Data Engineering / Other IT">
+      Big Data Engineering / Other IT
+    </option>
+  </optgroup>
+
+  {/* =============================== */}
+  {/*   AI-ENABLED PLACEMENT COURSES  */}
+  {/* =============================== */}
+  <optgroup label="AI Placement Courses">
+    <option value="Software Testing with AI">Software Testing with AI</option>
+    <option value="Full Stack Java Development with AI">
+      Full Stack Java Development with AI
+    </option>
+    <option value="Full Stack Python Development with AI">
+      Full Stack Python Development with AI
+    </option>
+    <option value="Full Stack .NET Development with AI">
+      Full Stack .NET Development with AI
+    </option>
+    <option value="Digital Marketing with AI">
+      Digital Marketing with AI
+    </option>
+    <option value="Data Science with AI">Data Science with AI</option>
+    <option value="Data Analytics with AI">Data Analytics with AI</option>
+  </optgroup>
+
+</select>
+
                       </div>
 
                       <textarea
@@ -734,7 +787,7 @@ const ContactPage = () => {
               <div className="inline-flex items-center gap-2 bg-blue-100 px-6 py-3 rounded-full mb-6">
                 <Building className="w-5 h-5 text-blue-600" />
                 <span className="text-sm font-bold text-blue-600 tracking-wide">
-                  OUR CAMPUSES
+                  OUR BRANCHES
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-extrabold mb-3">

@@ -12,11 +12,12 @@ import {
   TrendingUp,
   Star,
   Phone,
+  ArrowRight,
   Mail,
   MessageCircle,
   X,
   Briefcase,
-  Download,
+   Download,
   FileText,
   ChevronRight,
   Home,
@@ -411,37 +412,92 @@ const AngularTraining = () => {
                 </motion.div>
 
                 {/* Action Buttons */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.6 }}
-                  className="flex flex-col md:flex-row flex-wrap gap-3 md:gap-4 pt-3"
-                >
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                    className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-4 md:px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm"
-                  >
-                    <Briefcase className="w-4 h-4" />
-                    PLACEMENT REPORT
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                    className="w-full md:w-auto bg-teal-500 hover:bg-teal-600 text-white font-bold px-4 md:px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm"
-                  >
-                    <Download className="w-4 h-4" />
-                    DOWNLOAD CURRICULUM
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="w-full md:w-auto bg-teal-500 hover:bg-teal-600 text-white font-bold px-4 md:px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm"
-                  >
-                    <FileText className="w-4 h-4" />
-                    INTERVIEW QUESTIONS
-                  </motion.button>
-                </motion.div>
+              <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.6 }}
+  className="flex flex-col md:flex-row flex-wrap gap-3 md:gap-4 pt-3"
+>
+
+  {/* 1) SELECT COURSES */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-orange-500 hover:bg-orange-400 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    SELECT COURSES
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* 2) LEARN FROM EXPERTS */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-blue-600 hover:bg-blue-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    LEARN FROM EXPERTS
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* 3) PROJECTS */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-teal-500 hover:bg-teal-400 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    PROJECTS
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* ⭐ 4) MOCK & ASSESSMENT (NEW BUTTON) */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-purple-600 hover:bg-purple-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    MOCK & ASSESSMENT
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* 5) INTERVIEW CALLS */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-emerald-600 hover:bg-emerald-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    <FileText className="w-4 h-4" />
+    INTERVIEW CALLS
+  </motion.button>
+
+  {/* ⭐ 6) IS STUDENT PLACED (NEW LAST BUTTON) */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-indigo-600 hover:bg-indigo-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    <FileText className="w-4 h-4" />
+    STUDENT PLACED
+  </motion.button>
+
+</motion.div>
               </div>
 
               {/* Right Side - Counselling Form */}
@@ -760,162 +816,10 @@ const AngularTraining = () => {
         <CourseTechnologySection courseSlug="angular-course" />
 
         {/* Career Resources Section */}
-        <section className="py-8 md:py-12 bg-white overflow-hidden">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
-                <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
-                  Tools & Technologies You'll Master in Angular Development
-                </span>
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Master industry-standard tools and technologies used by top companies worldwide
-              </p>
-            </motion.div>
-
-            {/* Sliding Technology Logos */}
-            <div className="relative overflow-hidden py-8">
-              {/* Gradient overlay for fade effect */}
-              <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-slate-50 via-blue-50 to-transparent z-10 pointer-events-none" />
-              <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-slate-50 via-blue-50 to-transparent z-10 pointer-events-none" />
-              
-              <motion.div
-                className="flex gap-8 md:gap-12"
-                animate={{ 
-                  x: [0, -1200] 
-                }}
-                transition={{
-                  x: {
-                    repeat: Infinity,
-                    duration: 25,
-                    ease: "linear",
-                    repeatType: "loop"
-                  }
-                }}
-                style={{ width: "max-content" }}
-              >
-                {/* Software Testing Tools */}
-                {[
-                  { name: "Selenium", logo: "/coursesicons/html.jpg", color: "from-green-500 to-green-600" },
-                  { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
-                  { name: "SQL", logo: "/coursesicons/mysql.jpg", color: "from-blue-500 to-blue-600" },
-                  { name: "JUnit", logo: "/coursesicons/bootstrap.jpg", color: "from-purple-500 to-purple-600" },
-                  { name: "TestNG", logo: "/coursesicons/css.jpg", color: "from-indigo-500 to-indigo-600" },
-                  { name: "Maven", logo: "/coursesicons/django.jpg", color: "from-yellow-500 to-orange-500" },
-                  { name: "Jenkins", logo: "/coursesicons/jquery.jpg", color: "from-blue-600 to-blue-700" },
-                  { name: "Git", logo: "/coursesicons/html.jpg", color: "from-red-500 to-red-600" },
-                  { name: "Postman", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
-                  { name: "Bugzilla", logo: "/coursesicons/mysql.jpg", color: "from-red-500 to-pink-600" },
-                  { name: "Jira", logo: "/coursesicons/bootstrap.jpg", color: "from-blue-500 to-blue-600" },
-                  { name: "Docker", logo: "/coursesicons/css.jpg", color: "from-blue-400 to-blue-500" },
-                ].map((tool, index) => (
-                  <motion.div
-                    key={`tool-${index}`}
-                    className="flex-shrink-0 w-24 sm:w-28 lg:w-32"
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <div className={`w-full h-24 sm:h-28 lg:h-32 rounded-xl bg-gradient-to-r ${tool.color} flex flex-col items-center justify-center shadow-lg hover:shadow-2xl relative overflow-hidden group cursor-pointer transition-all duration-300 border border-white/20`}>
-                      <img 
-                        src={tool.logo} 
-                        alt={tool.name}
-                        className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300"
-                      />
-                      <div className="relative z-10 text-center px-2">
-                        <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 mx-auto mb-2 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
-                          <span className="text-white font-bold text-lg sm:text-xl lg:text-2xl">{tool.name.charAt(0)}</span>
-                        </div>
-                        <span className="text-white text-xs sm:text-sm font-semibold drop-shadow-lg">{tool.name}</span>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-                
-                {/* Duplicate set for seamless loop */}
-                {[
-                  { name: "Selenium", logo: "/coursesicons/html.jpg", color: "from-green-500 to-green-600" },
-                  { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
-                  { name: "SQL", logo: "/coursesicons/mysql.jpg", color: "from-blue-500 to-blue-600" },
-                  { name: "JUnit", logo: "/coursesicons/bootstrap.jpg", color: "from-purple-500 to-purple-600" },
-                  { name: "TestNG", logo: "/coursesicons/css.jpg", color: "from-indigo-500 to-indigo-600" },
-                  { name: "Maven", logo: "/coursesicons/django.jpg", color: "from-yellow-500 to-orange-500" },
-                  { name: "Jenkins", logo: "/coursesicons/jquery.jpg", color: "from-blue-600 to-blue-700" },
-                  { name: "Git", logo: "/coursesicons/html.jpg", color: "from-red-500 to-red-600" },
-                  { name: "Postman", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
-                  { name: "Bugzilla", logo: "/coursesicons/mysql.jpg", color: "from-red-500 to-pink-600" },
-                  { name: "Jira", logo: "/coursesicons/bootstrap.jpg", color: "from-blue-500 to-blue-600" },
-                  { name: "Docker", logo: "/coursesicons/css.jpg", color: "from-blue-400 to-blue-500" },
-                ].map((tool, index) => (
-                  <motion.div
-                    key={`tool-duplicate-${index}`}
-                    className="flex-shrink-0 w-24 sm:w-28 lg:w-32"
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <div className={`w-full h-24 sm:h-28 lg:h-32 rounded-xl bg-gradient-to-r ${tool.color} flex flex-col items-center justify-center shadow-lg hover:shadow-2xl relative overflow-hidden group cursor-pointer transition-all duration-300 border border-white/20`}>
-                      <img 
-                        src={tool.logo} 
-                        alt={tool.name}
-                        className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300"
-                      />
-                      <div className="relative z-10 text-center px-2">
-                        <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 mx-auto mb-2 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
-                          <span className="text-white font-bold text-lg sm:text-xl lg:text-2xl">{tool.name.charAt(0)}</span>
-                        </div>
-                        <span className="text-white text-xs sm:text-sm font-semibold drop-shadow-lg">{tool.name}</span>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-                
-                {/* Third set for extra smoothness */}
-                {[
-                  { name: "Selenium", logo: "/coursesicons/html.jpg", color: "from-green-500 to-green-600" },
-                  { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
-                  { name: "SQL", logo: "/coursesicons/mysql.jpg", color: "from-blue-500 to-blue-600" },
-                  { name: "JUnit", logo: "/coursesicons/bootstrap.jpg", color: "from-purple-500 to-purple-600" },
-                  { name: "TestNG", logo: "/coursesicons/css.jpg", color: "from-indigo-500 to-indigo-600" },
-                  { name: "Maven", logo: "/coursesicons/django.jpg", color: "from-yellow-500 to-orange-500" },
-                  { name: "Jenkins", logo: "/coursesicons/jquery.jpg", color: "from-blue-600 to-blue-700" },
-                  { name: "Git", logo: "/coursesicons/html.jpg", color: "from-red-500 to-red-600" },
-                  { name: "Postman", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
-                  { name: "Bugzilla", logo: "/coursesicons/mysql.jpg", color: "from-red-500 to-pink-600" },
-                  { name: "Jira", logo: "/coursesicons/bootstrap.jpg", color: "from-blue-500 to-blue-600" },
-                  { name: "Docker", logo: "/coursesicons/css.jpg", color: "from-blue-400 to-blue-500" },
-                ].map((tool, index) => (
-                  <motion.div
-                    key={`tool-triple-${index}`}
-                    className="flex-shrink-0 w-24 sm:w-28 lg:w-32"
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <div className={`w-full h-24 sm:h-28 lg:h-32 rounded-xl bg-gradient-to-r ${tool.color} flex flex-col items-center justify-center shadow-lg hover:shadow-2xl relative overflow-hidden group cursor-pointer transition-all duration-300 border border-white/20`}>
-                      <img 
-                        src={tool.logo} 
-                        alt={tool.name}
-                        className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300"
-                      />
-                      <div className="relative z-10 text-center px-2">
-                        <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 mx-auto mb-2 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
-                          <span className="text-white font-bold text-lg sm:text-xl lg:text-2xl">{tool.name.charAt(0)}</span>
-                        </div>
-                        <span className="text-white text-xs sm:text-sm font-semibold drop-shadow-lg">{tool.name}</span>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
-          </div>
-        </section>
+       
 
         {/* Career Resources Section */}
-        <section className="py-8 md:py-12 bg-white overflow-hidden">
+         <section className="py-8 md:py-12 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               {/* Heading Left (on desktop) */}
@@ -950,7 +854,7 @@ const AngularTraining = () => {
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors">Mock Session</h3>
-                  <p className="text-gray-600 leading-relaxed">You will get certificate after completion of program.</p>
+                 
                 </motion.div>
                 {/* LMS Learning Card */}
                 <motion.div
@@ -969,7 +873,7 @@ const AngularTraining = () => {
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-orange-500 transition-colors">LMS Learning</h3>
-                  <p className="text-gray-600 leading-relaxed">You will get certificate after completion of program.</p>
+                 
                 </motion.div>
                 {/* Career Support Card */}
                 <motion.div
@@ -988,7 +892,7 @@ const AngularTraining = () => {
                     </div>
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-500 transition-colors">Career Support</h3>
-                  <p className="text-gray-600 leading-relaxed">You will get certificate after completion of program.</p>
+                  
                 </motion.div>
               </div>
             </div>
@@ -1723,7 +1627,7 @@ const AngularTraining = () => {
                 {/* Main Title */}
                 <h2 className="text-3xl md:text-4xl font-extrabold mb-8">
                   <span className="bg-gradient-to-r from-blue-600  to-orange-500 bg-clip-text text-transparent">
-                    Showcase your Course Completion Certificate to Recruiters
+                    Earn Certificates Backed by High-Quality, Industry-Standard Training.
                   </span>
                 </h2>
 
@@ -1732,19 +1636,19 @@ const AngularTraining = () => {
                   <div className="flex items-end gap-4">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" strokeWidth={2.5} />
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      Training Certificate is Govern By 12 Global Associations.
+                      Earn Certificates Backed by High-Quality, Industry-Standard Training.
                     </p>
                   </div>
                   <div className="flex items-end gap-4">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" strokeWidth={2.5} />
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      Training Certificate is Powered by "Wipro DICE ID"
+                      Verified Through Secure Digital Validation for Employer Trust.
                     </p>
                   </div>
                   <div className="flex items-end gap-4">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" strokeWidth={2.5} />
                     <p className="text-gray-700 text-lg leading-relaxed">
-                      Training Certificate is Powered by "Verifiable Skill Credentials"
+                      Boosts Your Career Profile with Recognized and Credible Certification.
                     </p>
                   </div>
                 </div>
@@ -1818,7 +1722,7 @@ const AngularTraining = () => {
         </section>
 
         {/* Career Opportunities */}
-        <section className="py-8 md:py-12 bg-white overflow-hidden">
+       {/* <section className="py-8 md:py-12 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -1850,7 +1754,7 @@ const AngularTraining = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* FAQs Section - Professional */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">

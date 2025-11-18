@@ -267,7 +267,7 @@ This is the same quality of SEO used by professional businesses and will signifi
 - ✅ Twitter Sharing
 - ✅ LinkedIn Sharing
 - ✅ WhatsApp Previews
-- ✅ Local Search (Ahmedabad)
+- ✅ Local Search (Mumbai)
 - ✅ Mobile Devices
 
 ---

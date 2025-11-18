@@ -349,7 +349,7 @@ const SeleniumTesting = () => {
       <SEO 
         title="Selenium Automation Testing Training Course with Placement"
         description="Master Selenium Automation Testing with comprehensive training in Selenium WebDriver, Java, TestNG, Maven, Jenkins, and automation frameworks. Get hands-on experience with real projects and 100% placement assistance at QUASTECH."
-        keywords="selenium training, selenium automation, selenium webdriver, automation testing, selenium java, TestNG, test automation course, selenium training Ahmedabad"
+        keywords="selenium training, selenium automation, selenium webdriver, automation testing, selenium java, TestNG, test automation course, selenium training Mumbai"
         canonical="/selenium-testing"
         ogImage="/images/software testing/software testing.png"
         category="IT Courses"

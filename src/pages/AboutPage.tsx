@@ -160,8 +160,8 @@ const AboutPage = () => {
     <DarkModeProvider>
       <SEO 
         title="About QUASTECH - Leading IT Training Institute"
-        description="Learn about QUASTECH - Ahmedabad's premier IT training institute with 10+ years of excellence, 5000+ students placed, and industry-leading courses. Discover our mission, vision, and commitment to transforming careers through quality education."
-        keywords="about QUASTECH, IT training institute Ahmedabad, best software training center, placement success stories, IT education, professional training, coding bootcamp about us"
+        description="Learn about QUASTECH - Mumbai's premier IT training institute with 10+ years of excellence, 5000+ students placed, and industry-leading courses. Discover our mission, vision, and commitment to transforming careers through quality education."
+        keywords="about QUASTECH, IT training institute Mumbai, best software training center, placement success stories, IT education, professional training, coding bootcamp about us"
         canonical="/about"
         category="About"
       />

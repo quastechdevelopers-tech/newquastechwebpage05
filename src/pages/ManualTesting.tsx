@@ -348,7 +348,7 @@ const ManualTesting = () => {
       <SEO 
         title="Manual Testing Training Course with Placement"
         description="Master Manual Testing with comprehensive training in test case design, defect management, SDLC, STLC, and QA methodologies. Get hands-on experience with real projects and 100% placement assistance at QUASTECH."
-        keywords="manual testing course, manual testing training, test case design, defect management, SDLC, STLC, QA testing, software testing course, manual testing Ahmedabad"
+        keywords="manual testing course, manual testing training, test case design, defect management, SDLC, STLC, QA testing, software testing course, manual testing Mumbai"
         canonical="/manual-testing"
         ogImage="/images/software testing/software testing.png"
         category="IT Courses"

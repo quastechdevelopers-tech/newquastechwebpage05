@@ -12,7 +12,7 @@ Your website is now **70% SEO optimized** with professional enterprise-level imp
 - ✅ Structured data (JSON-LD) for rich search results
 - ✅ Open Graph & Twitter Cards for social sharing
 - ✅ Mobile optimization & fast loading
-- ✅ Local SEO for Ahmedabad, Gujarat
+- ✅ Local SEO for Mumbai, Gujarat
 
 ---
 

@@ -403,7 +403,7 @@ I am interested in booking a free counselling session. Please contact me at your
       <SEO 
         title="Software Testing Training Course with Placement"
         description="Master Software Testing with comprehensive training in Manual Testing, Selenium, Automation Testing, API Testing, and ISTQB certification. Get hands-on experience with real projects and 100% placement assistance at QUASTECH."
-        keywords="software testing course, selenium training, automation testing, manual testing, ISTQB certification, QA testing course, software testing training Ahmedabad, testing certification"
+        keywords="software testing course, selenium training, automation testing, manual testing, ISTQB certification, QA testing course, software testing training Mumbai, testing certification"
         canonical="/software-testing-training"
         ogImage="/images/software testing/software testing.png"
         category="IT Courses"

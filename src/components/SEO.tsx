@@ -74,7 +74,7 @@ const SEO = ({
       
       {/* Geo Tags for Local SEO */}
       <meta name="geo.region" content="IN-GJ" />
-      <meta name="geo.placename" content="Ahmedabad" />
+      <meta name="geo.placename" content="Mumbai" />
       <meta name="geo.position" content="23.0225;72.5714" />
       <meta name="ICBM" content="23.0225, 72.5714" />
 

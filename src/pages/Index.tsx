@@ -23,9 +23,9 @@ const Index = () => {
   return (
     <DarkModeProvider>
       <SEO 
-        title="Best IT Training Institute in Ahmedabad with 100% Placement"
-        description="QUASTECH - Premier IT training institute in Ahmedabad offering industry-leading courses in Full Stack Development, Data Science, Software Testing, Digital Marketing with guaranteed placements. Join 5000+ successful students!"
-        keywords="IT training institute Ahmedabad, best IT courses, software development training, full stack developer course, data science training, digital marketing course, placement guarantee, coding bootcamp, programming classes Ahmedabad, professional IT certification"
+        title="Best IT Training Institute in Mumbai with 100% Placement"
+        description="QUASTECH - Premier IT training institute in Mumbai offering industry-leading courses in Full Stack Development, Data Science, Software Testing, Digital Marketing with guaranteed placements. Join 5000+ successful students!"
+        keywords="IT training institute Mumbai, best IT courses, software development training, full stack developer course, data science training, digital marketing course, placement guarantee, coding bootcamp, programming classes Mumbai, professional IT certification"
         canonical="/"
         ogType="website"
       />

@@ -373,49 +373,91 @@ I'm interested in the React JS Development course. Please provide more details.`
                 </motion.p>
 
                 {/* Ratings Section */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
-                  className="space-y-3 mb-2"
-                >
-                  {/* Main Rating Row */}
-                  <div className="flex items-center gap-3 flex-wrap mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                    <span className="text-white font-semibold text-base">4.8 out of 5</span>
-                  </div>
-                  {/* Platform Ratings Row */}
-                  <div className="flex items-center gap-3 flex-wrap mb-2">
-                    {[
-                      { icon: "G", label: "Google", rating: "4.2/5" },
-                      { icon: "⭐", label: "", rating: "4.8/5" },
-                      { icon: "P", label: "", rating: "4.6/5" },
-                      { icon: "Jd", label: "Justdial", rating: "4.3/5" },
-                      { icon: "f", label: "Facebook", rating: "4.5/5" }
-                    ].map((platform, idx) => (
-                      <motion.button
-                        key={idx}
-                        className="flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-lg px-3 py-1.5 cursor-pointer hover:bg-white/30 hover:shadow-lg transition-all duration-300 border border-white/10 hover:border-white/20"
-                        whileHover={{ 
-                          scale: 1.05,
-                          y: -2,
-                          transition: { duration: 0.2, ease: "easeOut" }
-                        }}
-                        whileTap={{ scale: 0.95 }}
-                        onClick={() => {
-                          console.log(`${platform.label || platform.icon} rating clicked: ${platform.rating}`);
-                          // Add your click functionality here - you can navigate to reviews or show more details
-                        }}
-                      >
-                        <span className="text-white font-bold text-xs">{platform.icon}</span>
-                        {platform.label && <span className="text-white/90 text-xs">{platform.label}</span>}
-                        <span className="text-yellow-400 font-semibold text-xs">{platform.rating}</span>
-                      </motion.button>
-                    ))}
-                  </div>
-                </motion.div>
+               <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.4 }}
+  className="space-y-3 mb-2"
+>
+  {/* Main Rating Row */}
+  <div className="flex items-center gap-3 flex-wrap mb-2">
+    {[...Array(5)].map((_, i) => (
+      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+    ))}
+    <span className="text-white font-semibold text-base">4.8 out of 5</span>
+  </div>
+
+  {/* Platform Ratings Row */}
+  <div className="flex items-center gap-3 flex-wrap mb-2">
+    {[
+      {
+        id: "google",
+        name: "Google",
+        rating: "4.8 / 5",
+        abbrev: "G",
+        color: "#4285F4",
+        url: "https://g.page/r/CYpuYaIzlF7AEAE/review"
+      },
+      {
+        id: "facebook",
+        name: "Facebook",
+        rating: "4.9 / 5",
+        abbrev: "f",
+        color: "#1877F2",
+        url: "https://www.facebook.com/Quastech/"
+      },
+      {
+        id: "justdial",
+        name: "Just Dial",
+        rating: "4.8 / 5",
+        abbrev: "JD",
+        color: "#F28C00",
+        url: "https://www.justdial.com/Thane/Quastech-IT-Institute-Opp-Waman-Hari-Pethe-Jewellers-Thane-West/022PXX22-XX22-180515154522-L9N1_BZDET"
+      },
+      {
+        id: "glassdoor",
+        name: "Glassdoor",
+        rating: "4.7 / 5",
+        abbrev: "GD",
+        color: "#0CAA41",
+        url: "https://www.glassdoor.co.in/Reviews/QUASTECH-Thane-Reviews-"
+      }
+    ].map((platform) => (
+      <motion.button
+        key={platform.id}
+        className="flex items-center gap-2 bg-white rounded-full 
+                   px-3 py-1.5 cursor-pointer border border-gray-200 
+                   hover:bg-gray-50 transition-all duration-200 shadow-sm"
+        whileHover={{ scale: 1.03 }}
+        whileTap={{ scale: 0.98 }}
+        type="button"
+        onClick={() => window.open(platform.url, "_blank")}
+      >
+        {/* small circle abbrev */}
+        <div
+          className="w-6 h-6 rounded-full flex items-center justify-center 
+                     bg-gray-100 text-xs font-bold"
+          style={{ color: platform.color }}
+        >
+          {platform.abbrev}
+        </div>
+
+        {/* name + rating */}
+        <div className="flex items-center gap-2">
+          <span
+            className="text-xs font-semibold"
+            style={{ color: platform.color }}
+          >
+            {platform.name}
+          </span>
+          <span className="text-yellow-500 font-semibold text-xs">
+            {platform.rating}
+          </span>
+        </div>
+      </motion.button>
+    ))}
+  </div>
+</motion.div>
 
                 {/* Course Details Section */}
                 <motion.div

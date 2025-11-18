@@ -74,7 +74,7 @@ export const OrganizationStructuredData = () => {
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Various Locations",
-      "addressLocality": "Ahmedabad",
+      "addressLocality": "Mumbai",
       "addressRegion": "Gujarat",
       "postalCode": "380001",
       "addressCountry": "IN"

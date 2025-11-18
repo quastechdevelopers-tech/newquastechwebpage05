@@ -160,8 +160,8 @@ const ContactPage = () => {
     <DarkModeProvider>
       <SEO
         title="Contact Us - Get in Touch with QUASTECH"
-        description="Contact QUASTECH IT Training Institute - Multiple branches across Ahmedabad, Mumbai, and Pune. Get course details, visit our centers, or enquire about placements. Call us or visit our locations for free career counseling."
-        keywords="contact QUASTECH, IT training contact, course enquiry, visit training center, Ahmedabad IT institute contact, career counseling, free demo class"
+        description="Contact QUASTECH IT Training Institute - Multiple branches across Mumbai, Mumbai, and Pune. Get course details, visit our centers, or enquire about placements. Call us or visit our locations for free career counseling."
+        keywords="contact QUASTECH, IT training contact, course enquiry, visit training center, Mumbai IT institute contact, career counseling, free demo class"
         canonical="/contact"
         category="Contact"
       />

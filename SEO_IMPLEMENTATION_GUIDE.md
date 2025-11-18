@@ -186,7 +186,7 @@ import { CourseStructuredData, BreadcrumbStructuredData } from "@/components/Str
 - ✅ Breadcrumb navigation
 
 ### Local SEO
-- ✅ Geo tags for Ahmedabad, Gujarat
+- ✅ Geo tags for Mumbai, Gujarat
 - ✅ Local business schema
 - ✅ Contact information
 - ✅ Multiple branch locations
@@ -210,7 +210,7 @@ import { CourseStructuredData, BreadcrumbStructuredData } from "@/components/Str
 2. **Rich Snippets** - Enhanced search result appearance with structured data
 3. **Higher Click-Through Rates** - Compelling meta descriptions and titles
 4. **Better User Experience** - Fast loading, mobile-friendly
-5. **Local Search Visibility** - Improved local SEO for Ahmedabad searches
+5. **Local Search Visibility** - Improved local SEO for Mumbai searches
 6. **Social Media Sharing** - Optimized Open Graph tags for social shares
 7. **Crawlability** - Clear sitemap and robots.txt for search engines
 

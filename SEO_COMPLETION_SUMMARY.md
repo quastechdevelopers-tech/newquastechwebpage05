@@ -74,7 +74,7 @@ JSON-LD Schema markup for:
 - Open Graph tags
 - Twitter Card metadata
 - Favicon configuration
-- Geo tags for Ahmedabad, Gujarat
+- Geo tags for Mumbai, Gujarat
 - Theme colors
 - Canonical URL
 - Preconnect for performance
@@ -127,7 +127,7 @@ JSON-LD Schema markup for:
 - [x] Internal linking structure
 
 ### Local SEO ✅
-- [x] Geo tags (Ahmedabad, Gujarat, India)
+- [x] Geo tags (Mumbai, Gujarat, India)
 - [x] Local business schema
 - [x] Multiple branch locations
 - [x] Contact information
@@ -262,10 +262,10 @@ return (
 ## 🎓 SEO Knowledge Base
 
 ### Keywords Strategy:
-- **Primary Keywords:** IT training institute Ahmedabad, software development courses
+- **Primary Keywords:** IT training institute Mumbai, software development courses
 - **Secondary Keywords:** full stack developer course, data science training, placement guarantee
-- **Long-tail Keywords:** best IT training institute in Ahmedabad with placement
-- **Local Keywords:** IT courses in Gujarat, Ahmedabad coding bootcamp
+- **Long-tail Keywords:** best IT training institute in Mumbai with placement
+- **Local Keywords:** IT courses in Gujarat, Mumbai coding bootcamp
 
 ### Content Strategy:
 - Unique content for each page

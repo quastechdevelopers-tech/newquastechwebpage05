@@ -221,7 +221,8 @@ I am interested in booking a free counselling session. Please contact me at your
         "Subqueries & Nested Queries",
         "Constraints (PK, FK, Unique, Check)",
         "Stored Procedures & Functions",
-        "Views & Materialized Views",
+        // "Views & Materialized Views",
+        "savepoint,constraints-not null,default",
         "Database Triggers",
         "GROUP BY & HAVING Clauses"
       ]
@@ -240,7 +241,7 @@ I am interested in booking a free counselling session. Please contact me at your
         "Control Statements (if, switch)",
         "Loop Constructs (for, while, do-while)",
         "Arrays & String Handling",
-        "Methods, Parameters & Return Types"
+        "if else,ladder if , nested if",
       ]
     },
     {
@@ -314,8 +315,8 @@ I am interested in booking a free counselling session. Please contact me at your
         "Performance Testing Fundamentals",
         "JMeter Installation & UI Overview",
         "Test Plan & Thread Group Design",
-        "Samplers, Controllers & Config Elements",
-        "Assertions, Timers & Listeners",
+        "Samplers,Config Elements",
+        "Assertions,Listeners",
         "Parameterization with CSV Data",
         "JDBC Connectivity & Database Testing",
         "Performance Reports & Analysis"
@@ -334,7 +335,7 @@ I am interested in booking a free counselling session. Please contact me at your
         "Polymorphism (Compile-time & Runtime)",
         "Encapsulation & Abstraction",
         "Interfaces & Abstract Classes",
-        "this, super, static & final keywords",
+        "this,static & final",
         "Exception Handling & Collections Overview"
       ]
     },
@@ -349,15 +350,15 @@ I am interested in booking a free counselling session. Please contact me at your
         "Setting Up Selenium WebDriver",
         "Locators Strategy & WebDriver Methods",
         "Handling Checkbox, Radio Button & Text Box",
-        "Dropdowns, Alerts & Multiple Windows",
+        "Dropdowns, Alerts ",
         "Implicit, Explicit & Fluent Waits",
         "Actions Class & Advanced User Interactions",
-        "Screenshots, Logs & Reporting",
-        "Page Object Model & Page Factory",
+        "Screenshots",
+        "Page Object Model ",
         "Data Driven Framework with Apache POI",
         "Keyword & Hybrid Driven Frameworks",
         "Database Testing Integration",
-        "TestNG (Annotations, Parameters, Assertions)",
+        "TestNG (Annotations, Assertions)",
         "BDD with Cucumber Overview",
         "Maven Build Management",
         "Jenkins"
@@ -371,8 +372,8 @@ I am interested in booking a free counselling session. Please contact me at your
       topics: [
         "Framework Design End-to-End",
         "Test Data & Environment Management",
-        "Continuous Integration Demo",
-        "Reporting, Metrics & Sign-off"
+        // "Continuous Integration Demo",
+        // "Reporting, Metrics & Sign-off"
       ]
     },
     {
@@ -910,7 +911,7 @@ I am interested in booking a free counselling session. Please contact me at your
 
                     {/* Description */}
                     <p className="text-gray-600 text-center mb-6 leading-relaxed flex-grow">
-                      Become an automation testing expert with hands-on training in Selenium WebDriver, Java, TestNG, Maven, Jenkins, and advanced automation frameworks. Ideal for advancing your testing career.
+                      Become an automation testing expert with hands-on training in Selenium , Java, TestNG, Maven, Jenkins, and advanced automation frameworks. Ideal for advancing your testing career.
                     </p>
 
                     {/* Features List */}

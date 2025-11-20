@@ -173,16 +173,17 @@ const MeanStackDevelopment = () => {
   // MEAN Stack Curriculum Modules - 30 weeks (7.5 Months)
   const curriculumModules = [
     {
-      id: "module-1",
-      title: "MongoDB Database",
+       id: "module-1",
+      title: "MySQL Database",
       category: "#Database",
       duration: "2 Weeks",
       topics: [
-        "MongoDB Fundamentals",
-        "NoSQL Database Concepts",
+        "MySQL Fundamentals",
+        "Relational Database Concepts",
         "CRUD Operations",
         "Aggregation Framework",
-        "Indexing & Performance"
+        "Indexing & Performance",
+        "Data Modeling"
       ]
     },
     {

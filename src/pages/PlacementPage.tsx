@@ -153,16 +153,18 @@ const students = [
     course: "Digital marketing Intern",
     image: "/images/NewStudentReview/Viraj Bagul - Digital marketing Intern - Universal Mediaa.png", // Add image path manually
     company: "Universal Mediaa",
-    companyLogo: "/images/companypng/30.png" // Nimap Infotech logo path  D:\quaastechwebsite005\quastechwebpagev04-main\public\images\NewStudentReview\Viraj Bagul - Digital marketing Intern - Universal Mediaa.png
+    companyLogo: "/images/companypng/Universal Media (1).png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\Universal Media (1).png
   },
   {
     name: "Trishali Mahesh Raut",
     role: " QA Tester",
     course: "Software Testing",
     image: "/images/NewStudentReview/Trishali Mahesh Raut - QA Tester - SEQURETEK Pvt Ltd.png", // Add image path manually
-    company: "Mobicule Technologies Pvt. Ltd.",
-    companyLogo: "/images/companypng/mobicule01.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\NewStudentReview\Trishali Mahesh Raut - QA Tester - SEQURETEK Pvt Ltd.png
+    company: "SEQURETEK Pvt Ltd",
+    companyLogo: "/images/companypng/sequretek01.png" // D:\quaastechwebsite005\quastechwebpagev04-main\public\images\NewStudentReview\Trishali Mahesh Raut - QA Tester - SEQURETEK Pvt Ltd.png
   },
+
+  //D:\quaastechwebsite005\quastechwebpagev04-main\public\images\companypng\sequretek01.png
   // Additional students for variety (keeping some old ones for more content)
   {
     name: "Saurabh Devlekar",

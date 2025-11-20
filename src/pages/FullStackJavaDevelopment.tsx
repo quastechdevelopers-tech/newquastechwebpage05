@@ -795,7 +795,7 @@ I'm interested in the Full Stack Java Development course. Please provide more de
                         <Wrench className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent">10+</div>
+                        <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent">20+</div>
                         <div className="text-sm text-gray-600 font-medium">Languages & Tools</div>
                       </div>
                     </div>
@@ -806,22 +806,22 @@ I'm interested in the Full Stack Java Development course. Please provide more de
                         <Calendar className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <div className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">280+</div>
-                        <div className="text-sm text-gray-600 font-medium">Live Sessions Hours</div>
+                        <div className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">100+</div>
+                        <div className="text-sm text-gray-600 font-medium">Live Sessions </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <motion.button
+               {/* <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <Download className="w-5 h-5" />
                   Download Brochure
-                </motion.button>
-              </motion.div>
+                </motion.button> */}
+              </motion.div> 
 
               {/* Main Curriculum Content */}
               <div className="relative">

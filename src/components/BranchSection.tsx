@@ -35,9 +35,9 @@ const branchesData = [
     email: "info@quastech.in",
     map: "https://www.google.com/search?q=quastech+borivali",
     images: [
-      "/images/branches/borivali/WhatsApp Image 2025-11-07 at 14.26.33_aafdd705.jpg",
-      "/images/branches/borivali/WhatsApp Image 2025-11-07 at 14.26.34_4743ad0e.jpg",
-      "/images/branches/borivali/WhatsApp Image 2025-11-07 at 14.26.34_70160b73.jpg",
+      // "/images/branches/borivali/WhatsApp Image 2025-11-07 at 14.26.33_aafdd705.jpg",
+      // "/images/branches/borivali/WhatsApp Image 2025-11-07 at 14.26.34_4743ad0e.jpg",
+      // "/images/branches/borivali/WhatsApp Image 2025-11-07 at 14.26.34_70160b73.jpg",
       "/images/branches/borivali/WhatsApp Image 2025-11-07 at 14.26.35_3df2090d.jpg",
       "/images/branches/borivali/WhatsApp Image 2025-11-07 at 14.27.02_25db2b8a.jpg",
       "/images/branches/borivali/WhatsApp Image 2025-11-07 at 14.27.02_4eadf964.jpg",

@@ -712,15 +712,15 @@ const BCA = () => {
                   </div>
                 </div>
 
-                <motion.button
+                {/* <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <Download className="w-5 h-5" />
                   Download Brochure
-                </motion.button>
-              </motion.div>
+                </motion.button> */}
+              </motion.div> 
 
               {/* Main Curriculum Content */}
               <div className="relative">

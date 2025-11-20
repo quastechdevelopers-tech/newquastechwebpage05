@@ -481,37 +481,92 @@ I'm interested in the React JS Development course. Please provide more details.`
                 </motion.div>
 
                 {/* Action Buttons */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.6 }}
-                  className="flex flex-col lg:flex-row flex-wrap gap-3 md:gap-4 pt-3"
-                >
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                    className="w-full md:w-auto bg-orange-500 hover:bg-orange-600 text-white font-bold px-4 md:px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm"
-                  >
-                    <Briefcase className="w-4 h-4" />
-                    PLACEMENT REPORT
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                    className="w-full md:w-auto bg-teal-500 hover:bg-teal-600 text-white font-bold px-4 md:px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm"
-                  >
-                    <Download className="w-4 h-4" />
-                    DOWNLOAD CURRICULUM
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="w-full md:w-auto bg-teal-500 hover:bg-teal-600 text-white font-bold px-4 md:px-5 py-2.5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs md:text-sm"
-                  >
-                    <FileText className="w-4 h-4" />
-                    INTERVIEW QUESTIONS
-                  </motion.button>
-                </motion.div>
+                 <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.6 }}
+  className="flex flex-col md:flex-row flex-wrap gap-3 md:gap-4 pt-3"
+>
+
+  {/* 1) SELECT COURSES */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-orange-500 hover:bg-orange-400 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    SELECT COURSES
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* 2) LEARN FROM EXPERTS */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-blue-600 hover:bg-blue-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    LEARN FROM EXPERTS
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* 3) PROJECTS */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-teal-500 hover:bg-teal-400 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    PROJECTS
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* ⭐ 4) MOCK & ASSESSMENT (NEW BUTTON) */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-purple-600 hover:bg-purple-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    MOCK & ASSESSMENT
+    <ArrowRight className="w-4 h-4" />
+  </motion.button>
+
+  {/* 5) INTERVIEW CALLS */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-emerald-600 hover:bg-emerald-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    <FileText className="w-4 h-4" />
+    INTERVIEW CALLS
+  </motion.button>
+
+  {/* ⭐ 6) IS STUDENT PLACED (NEW LAST BUTTON) */}
+  <motion.button
+    whileTap={{ scale: 0.98 }}
+    whileHover={{ scale: 1.02 }}
+    className="w-full md:w-auto text-white font-semibold px-5 py-3 rounded-md 
+               bg-indigo-600 hover:bg-indigo-500 shadow-sm transition-colors duration-150 
+               flex items-center justify-center gap-2 text-sm"
+    type="button"
+  >
+    <FileText className="w-4 h-4" />
+    STUDENT PLACED
+  </motion.button>
+
+</motion.div>
               </div>
 
               {/* Right Side - Counselling Form */}
@@ -667,7 +722,7 @@ I'm interested in the React JS Development course. Please provide more details.`
                 </p>
 
                 {/* Stats Cards */}
-                <div className="space-y-4 mb-8">
+                 <div className="space-y-4 mb-8">
                   <div className="bg-white rounded-xl p-4 shadow-lg">
                     <div className="flex items-center gap-3">
                       <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
@@ -685,7 +740,7 @@ I'm interested in the React JS Development course. Please provide more details.`
                         <Wrench className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent">10+</div>
+                        <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent">20+</div>
                         <div className="text-sm text-gray-600 font-medium">Languages & Tools</div>
                       </div>
                     </div>
@@ -696,22 +751,22 @@ I'm interested in the React JS Development course. Please provide more details.`
                         <Calendar className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <div className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">280+</div>
-                        <div className="text-sm text-gray-600 font-medium">Live Sessions Hours</div>
+                        <div className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">100+</div>
+                        <div className="text-sm text-gray-600 font-medium">Live Sessions </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <motion.button
+                 {/* <motion.button
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <Download className="w-5 h-5" />
                   Download Brochure
-                </motion.button>
-              </motion.div>
+                </motion.button>  */}
+              </motion.div>  
 
               {/* Main Curriculum Content */}
               <div className="relative">

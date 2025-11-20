@@ -1954,7 +1954,7 @@ const MERNStackDevelopment = () => {
               >
                 <div className="relative">
                   <img
-                    src="/images/certificate.jpg"
+                   src="/images/Certificate/WhatsApp Image 2025-11-18 at 9.11.20 PM.jpeg"
                     alt="Certificate Of Achievement"
                     className="w-full h-auto object-contain"
                   />

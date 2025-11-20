@@ -891,7 +891,7 @@ I am interested in booking a free counselling session. Please contact me at your
         </section>
 
         {/* Key Highlights Section */}
-        <section className="py-8 md:py-12 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+        {/* <section className="py-8 md:py-12 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -938,7 +938,7 @@ I am interested in booking a free counselling session. Please contact me at your
           </div>
         </section>
 
-        {/* Tools & Technologies Section */}
+       
         <section className="py-8 md:py-12 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
           <div className="container mx-auto px-4">
             <motion.div
@@ -957,9 +957,9 @@ I am interested in booking a free counselling session. Please contact me at your
               </p>
             </motion.div>
 
-            {/* Sliding Technology Logos */}
+            
             <div className="relative overflow-hidden py-8">
-              {/* Gradient overlay for fade effect */}
+             
               <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-slate-50 via-blue-50 to-transparent z-10 pointer-events-none" />
               <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-slate-50 via-blue-50 to-transparent z-10 pointer-events-none" />
               
@@ -978,7 +978,7 @@ I am interested in booking a free counselling session. Please contact me at your
                 }}
                 style={{ width: "max-content" }}
               >
-                {/* Software Testing Tools */}
+              
                 {[
                   { name: "Selenium", logo: "/coursesicons/html.jpg", color: "from-green-500 to-green-600" },
                   { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
@@ -1015,7 +1015,7 @@ I am interested in booking a free counselling session. Please contact me at your
                   </motion.div>
                 ))}
                 
-                {/* Duplicate set for seamless loop */}
+                
                 {[
                   { name: "Selenium", logo: "/coursesicons/html.jpg", color: "from-green-500 to-green-600" },
                   { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
@@ -1052,7 +1052,7 @@ I am interested in booking a free counselling session. Please contact me at your
                   </motion.div>
                 ))}
                 
-                {/* Third set for extra smoothness */}
+               
                 {[
                   { name: "Selenium", logo: "/coursesicons/html.jpg", color: "from-green-500 to-green-600" },
                   { name: "Java", logo: "/coursesicons/python.jpg", color: "from-orange-500 to-orange-600" },
@@ -1091,7 +1091,7 @@ I am interested in booking a free counselling session. Please contact me at your
               </motion.div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Career Resources Section */}
          <section className="py-8 md:py-12 bg-white overflow-hidden">
@@ -1982,7 +1982,7 @@ I am interested in booking a free counselling session. Please contact me at your
               >
                 <div className="relative">
                   <img
-                    src="/images/certificate.jpg"
+                   src="/images/Certificate/WhatsApp Image 2025-11-18 at 9.11.20 PM.jpeg"
                     alt="Certificate Of Achievement"
                     className="w-full h-auto object-contain"
                   />

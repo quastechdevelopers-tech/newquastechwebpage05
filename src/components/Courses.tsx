@@ -67,8 +67,8 @@ const Courses = () => {
     "Full Stack Python Development with AI": "/full-stack-python-development",
     "Full Stack .NET Development with AI": "/full-stack-dotnet-development",
     "Digital Marketing with AI": "/digital-marketing",
-    "Data Science with AI": "/data-science-with-python",
-    "Data Analytics with AI": "/ai-data-analytics"
+    "Data Science with AI": "/python-data-science",
+    "Data Analytics with AI": "/data-analysis-visualization"
   };
 
   const WHATSAPP_NUMBER = "918422800381";

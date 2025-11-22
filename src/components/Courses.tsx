@@ -237,7 +237,7 @@ const Courses = () => {
   };
 
   return (
-    <section id="courses" className="section-spacing-compact bg-gradient-mesh relative z-10 max-w-full pt-6 md:pt-8">
+    <section id="courses" className="py-7 bg-gradient-mesh relative z-10 max-w-full pt-6 md:pt-8">
       <div className="container mx-auto container-padding px-4 sm:px-6 md:px-8 max-w-full">
         {/* Header */}
         <motion.div
@@ -619,7 +619,7 @@ const Courses = () => {
           <div className="bg-gradient-hero rounded-2xl p-6 md:p-8 lg:p-10 text-white shadow-xl">
             <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Transform Your Career with Expert Guidance</h3>
             <p className="text-sm md:text-base mb-5 md:mb-6 text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Connect with our industry-expert career counselors for personalized course recommendations tailored to your goals.
+              Connect with our expert career counselors for personalized course recommendations tailored to your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="glass" size="lg" className="text-sm md:text-base font-semibold hover:scale-105 transition-transform" onClick={() => setShowCounsellorForm(true)}>

@@ -101,11 +101,9 @@ const ContactPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const whatsappMessage = `*Contact Form Submission*\n\n👤 *Name:* ${formData.name}\n📧 *Email:* ${formData.email}\n📱 *Phone:* ${formData.phone}\n📚 *Course Interest:* ${
-      formData.course || "Not specified"
-    }\n💬 *Message:* ${
-      formData.message || "No additional message"
-    }\n\nI would like to get in touch with you regarding the course.`;
+    const whatsappMessage = `*Contact Form Submission*\n\n👤 *Name:* ${formData.name}\n📧 *Email:* ${formData.email}\n📱 *Phone:* ${formData.phone}\n📚 *Course Interest:* ${formData.course || "Not specified"
+      }\n💬 *Message:* ${formData.message || "No additional message"
+      }\n\nI would like to get in touch with you regarding the course.`;
 
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappNumber = "918422800381";
@@ -253,7 +251,7 @@ const ContactPage = () => {
               ease: "easeInOut",
               delay: 2,
             }}
-             className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[460px] h-[460px] bg-gradient-to-br from-blue-600/20 to-orange-500/20 rounded-full blur-3xl"
+            className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[460px] h-[460px] bg-gradient-to-br from-blue-600/20 to-orange-500/20 rounded-full blur-3xl"
           />
 
           <div className="relative z-10 container mx-auto px-4 h-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-12">
@@ -315,7 +313,7 @@ const ContactPage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
-               className="mt-6 w-full lg:pl-6"
+                className="mt-6 w-full lg:pl-6"
               >
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto lg:mx-0">
                   {/* Call Us */}
@@ -386,9 +384,9 @@ const ContactPage = () => {
               initial={{ opacity: 0, x: 50, scale: 0.9 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-               className="w-full flex justify-center lg:justify-end mb-4 lg:mb-0"
+              className="w-full flex justify-center lg:justify-end mb-4 lg:mb-0"
             >
-               <div className="relative w-64 sm:w-80 md:w-96 lg:w-[500px]">
+              <div className="relative w-64 sm:w-80 md:w-96 lg:w-[500px]">
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -411,7 +409,7 @@ const ContactPage = () => {
         </section>
 
         {/* Contact Form & Details */}
-        <section className="py-8">
+        <section className="py-7">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
               {/* Form */}
@@ -473,74 +471,74 @@ const ContactPage = () => {
                           className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:bg-white transition-all outline-none"
                         />
                         <select
-  name="course"
-  value={formData.course}
-  onChange={handleInputChange}
-  className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:bg-white transition-all outline-none"
->
-  <option value="">Select Course</option>
+                          name="course"
+                          value={formData.course}
+                          onChange={handleInputChange}
+                          className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:bg-white transition-all outline-none"
+                        >
+                          <option value="">Select Course</option>
 
-  {/* =============================== */}
-  {/*   E-CLASS COURSES               */}
-  {/* =============================== */}
-  <optgroup label="E-Class Courses">
-    <option value="SOFTWARE TESTING TRAINING">SOFTWARE TESTING TRAINING</option>
-    <option value="FULL STACK JAVA DEVELOPMENT TRAINING">FULL STACK JAVA DEVELOPMENT TRAINING</option>
-    <option value="FULL STACK PYTHON DEVELOPMENT TRAINING">FULL STACK PYTHON DEVELOPMENT TRAINING</option>
-    <option value="FULL STACK WEB DEVELOPMENT TRAINING">FULL STACK WEB DEVELOPMENT TRAINING</option>
-    <option value="JAVA DEVELOPMENT TRAINING">JAVA DEVELOPMENT TRAINING</option>
-    <option value="PYTHON DEVELOPMENT TRAINING">PYTHON DEVELOPMENT TRAINING</option>
-    <option value="WEB DESIGNING TRAINING">WEB DESIGNING TRAINING</option>
-    <option value="DATA SCIENCE WITH PYTHON">DATA SCIENCE WITH PYTHON</option>
-    <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
-  </optgroup>
+                          {/* =============================== */}
+                          {/*   E-CLASS COURSES               */}
+                          {/* =============================== */}
+                          <optgroup label="E-Class Courses">
+                            <option value="SOFTWARE TESTING TRAINING">SOFTWARE TESTING TRAINING</option>
+                            <option value="FULL STACK JAVA DEVELOPMENT TRAINING">FULL STACK JAVA DEVELOPMENT TRAINING</option>
+                            <option value="FULL STACK PYTHON DEVELOPMENT TRAINING">FULL STACK PYTHON DEVELOPMENT TRAINING</option>
+                            <option value="FULL STACK WEB DEVELOPMENT TRAINING">FULL STACK WEB DEVELOPMENT TRAINING</option>
+                            <option value="JAVA DEVELOPMENT TRAINING">JAVA DEVELOPMENT TRAINING</option>
+                            <option value="PYTHON DEVELOPMENT TRAINING">PYTHON DEVELOPMENT TRAINING</option>
+                            <option value="WEB DESIGNING TRAINING">WEB DESIGNING TRAINING</option>
+                            <option value="DATA SCIENCE WITH PYTHON">DATA SCIENCE WITH PYTHON</option>
+                            <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
+                          </optgroup>
 
-  {/* =============================== */}
-  {/*   DEGREE PROGRAMS               */}
-  {/* =============================== */}
-  <optgroup label="Degree Courses">
-    <option value="BCA (Bachelor of Computer Applications)">
-      BCA (Bachelor of Computer Applications)
-    </option>
-    <option value="Quastech Degree Program">Quastech Degree Program</option>
-  </optgroup>
+                          {/* =============================== */}
+                          {/*   DEGREE PROGRAMS               */}
+                          {/* =============================== */}
+                          <optgroup label="Degree Courses">
+                            <option value="BCA (Bachelor of Computer Applications)">
+                              BCA (Bachelor of Computer Applications)
+                            </option>
+                            <option value="Quastech Degree Program">Quastech Degree Program</option>
+                          </optgroup>
 
-  {/* =============================== */}
-  {/*   CERTIFICATION CATEGORIES      */}
-  {/* =============================== */}
-  <optgroup label="Certification Categories">
-    <option value="Software Testing">Software Testing</option>
-    <option value="Fullstack Development">Fullstack Development</option>
-    <option value="Software Development">Software Development</option>
-    <option value="Front End Development">Front End Development</option>
-    <option value="Data Science & Analytics">Data Science & Analytics</option>
-    <option value="Big Data Engineering / Other IT">
-      Big Data Engineering / Other IT
-    </option>
-  </optgroup>
+                          {/* =============================== */}
+                          {/*   CERTIFICATION CATEGORIES      */}
+                          {/* =============================== */}
+                          <optgroup label="Certification Categories">
+                            <option value="Software Testing">Software Testing</option>
+                            <option value="Fullstack Development">Fullstack Development</option>
+                            <option value="Software Development">Software Development</option>
+                            <option value="Front End Development">Front End Development</option>
+                            <option value="Data Science & Analytics">Data Science & Analytics</option>
+                            <option value="Big Data Engineering / Other IT">
+                              Big Data Engineering / Other IT
+                            </option>
+                          </optgroup>
 
-  {/* =============================== */}
-  {/*   AI-ENABLED PLACEMENT COURSES  */}
-  {/* =============================== */}
-  <optgroup label="AI Placement Courses">
-    <option value="Software Testing with AI">Software Testing with AI</option>
-    <option value="Full Stack Java Development with AI">
-      Full Stack Java Development with AI
-    </option>
-    <option value="Full Stack Python Development with AI">
-      Full Stack Python Development with AI
-    </option>
-    <option value="Full Stack .NET Development with AI">
-      Full Stack .NET Development with AI
-    </option>
-    <option value="Digital Marketing with AI">
-      Digital Marketing with AI
-    </option>
-    <option value="Data Science with AI">Data Science with AI</option>
-    <option value="Data Analytics with AI">Data Analytics with AI</option>
-  </optgroup>
+                          {/* =============================== */}
+                          {/*   AI-ENABLED PLACEMENT COURSES  */}
+                          {/* =============================== */}
+                          <optgroup label="AI Placement Courses">
+                            <option value="Software Testing with AI">Software Testing with AI</option>
+                            <option value="Full Stack Java Development with AI">
+                              Full Stack Java Development with AI
+                            </option>
+                            <option value="Full Stack Python Development with AI">
+                              Full Stack Python Development with AI
+                            </option>
+                            <option value="Full Stack .NET Development with AI">
+                              Full Stack .NET Development with AI
+                            </option>
+                            <option value="Digital Marketing with AI">
+                              Digital Marketing with AI
+                            </option>
+                            <option value="Data Science with AI">Data Science with AI</option>
+                            <option value="Data Analytics with AI">Data Analytics with AI</option>
+                          </optgroup>
 
-</select>
+                        </select>
 
                       </div>
 
@@ -623,7 +621,7 @@ const ContactPage = () => {
         </section>
 
         {/* Contact Cards */}
-        <section className="py-8">
+        <section className="py-7">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -777,7 +775,7 @@ const ContactPage = () => {
         </section>
 
         {/* Branches Section */}
-        <section className="py-10">
+        <section className="py-7">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -809,11 +807,10 @@ const ContactPage = () => {
                   onClick={() => setSelectedBranch(branch.id)}
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`px-6 sm:px-8 py-3 rounded-full font-bold transition-all duration-300 ${
-                    selectedBranch === branch.id
-                      ? "bg-gradient-to-r from-blue-600 to-orange-500 text-white shadow-xl scale-105"
-                      : "bg-white text-gray-700 shadow-md hover:shadow-lg"
-                  }`}
+                  className={`px-6 sm:px-8 py-3 rounded-full font-bold transition-all duration-300 ${selectedBranch === branch.id
+                    ? "bg-gradient-to-r from-blue-600 to-orange-500 text-white shadow-xl scale-105"
+                    : "bg-white text-gray-700 shadow-md hover:shadow-lg"
+                    }`}
                 >
                   {branch.name}
                 </motion.button>

@@ -158,14 +158,14 @@ const AboutPage = () => {
 
   return (
     <DarkModeProvider>
-      <SEO 
+      <SEO
         title="About QUASTECH - Leading IT Training Institute"
         description="Learn about QUASTECH - Mumbai's premier IT training institute with 10+ years of excellence, 5000+ students placed, and industry-leading courses. Discover our mission, vision, and commitment to transforming careers through quality education."
         keywords="about QUASTECH, IT training institute Mumbai, best software training center, placement success stories, IT education, professional training, coding bootcamp about us"
         canonical="/about"
         category="About"
       />
-      <BreadcrumbStructuredData 
+      <BreadcrumbStructuredData
         items={[
           { name: "Home", url: "/" },
           { name: "About Us", url: "/about" }
@@ -179,13 +179,13 @@ const AboutPage = () => {
           <div className="absolute inset-0 z-0">
             {/* Clean Professional Hero Gradient - Same as Hero Component */}
             <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800" />
-            
+
             {/* Subtle Overlay for Better Text Contrast */}
             <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 via-transparent to-orange-900/20" />
-            
+
             {/* Professional Mesh Overlay - Reduced Opacity */}
             <div className="absolute inset-0 bg-gradient-mesh opacity-10" />
-            
+
             {/* Subtle Grid Pattern - Reduced Opacity */}
             <div
               className="absolute inset-0 opacity-5"
@@ -199,29 +199,29 @@ const AboutPage = () => {
             {/* Animated Floating Elements */}
             <motion.div
               initial={{ y: 0, x: 0, rotate: 0 }}
-              animate={{ 
+              animate={{
                 y: -20,
                 x: 10,
                 rotate: 8
               }}
-              transition={{ 
-                duration: 7, 
+              transition={{
+                duration: 7,
                 repeat: Infinity,
                 repeatType: 'reverse',
-                ease: "easeInOut" 
+                ease: "easeInOut"
               }}
               className="absolute top-16 left-8 w-48 h-48 md:w-56 md:h-56 bg-gradient-to-br from-blue-500/30 to-blue-600/30 rounded-full blur-3xl"
             />
-            
+
             <motion.div
               initial={{ y: 0, x: 0, rotate: 0 }}
-              animate={{ 
+              animate={{
                 y: 20,
                 x: -10,
                 rotate: -8
               }}
-              transition={{ 
-                duration: 9, 
+              transition={{
+                duration: 9,
                 repeat: Infinity,
                 repeatType: 'reverse',
                 ease: "easeInOut",
@@ -232,12 +232,12 @@ const AboutPage = () => {
 
             <motion.div
               initial={{ scale: 1, opacity: 0.3 }}
-              animate={{ 
+              animate={{
                 scale: 1.15,
                 opacity: 0.4
               }}
-              transition={{ 
-                duration: 10, 
+              transition={{
+                duration: 10,
                 repeat: Infinity,
                 repeatType: 'reverse',
                 ease: "easeInOut",
@@ -246,7 +246,7 @@ const AboutPage = () => {
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[450px] md:h-[450px] bg-gradient-to-br from-blue-600/20 to-orange-500/20 rounded-full blur-3xl"
             />
           </div>
-          
+
           <div className="relative z-10 w-full max-w-7xl mx-auto grid md:grid-cols-2 gap-4 md:gap-6 items-center py-2">
             {/* Left Side - Text Content with 3D Effects */}
             <motion.div
@@ -265,7 +265,7 @@ const AboutPage = () => {
               >
                 About Quastech
               </motion.h1>
-              
+
               <motion.p
                 className="text-base md:text-lg text-blue-200 leading-snug drop-shadow-lg mb-2"
                 initial={{ opacity: 0, y: 30 }}
@@ -274,7 +274,7 @@ const AboutPage = () => {
               >
                 Empowering Careers Through Excellence in IT Education
               </motion.p>
-              
+
               <motion.div
                 className="space-y-2"
                 initial={{ opacity: 0, y: 30 }}
@@ -407,7 +407,7 @@ const AboutPage = () => {
         </section>
 
         {/* About Us Section - Left Text, Right Image */}
-        <section className="py-20 px-4 md:px-8 bg-white">
+        <section className="py-7 px-4 md:px-8 bg-white">
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text */}
             <motion.div
@@ -453,7 +453,7 @@ const AboutPage = () => {
         </section>
 
         {/* Achievements Section */}
-        <section className="py-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+        <section className="py-7 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
           <div className="container mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -488,7 +488,7 @@ const AboutPage = () => {
         </section>
 
         {/* Mission & Vision Section */}
-        <section className="py-16 px-4 bg-white">
+        <section className="py-7 px-4 bg-white">
           <div className="container mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <motion.div
@@ -525,7 +525,7 @@ const AboutPage = () => {
         </section>
 
         {/* Core Values Section */}
-        <section className="py-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+        <section className="py-7 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
           <div className="container mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -563,7 +563,7 @@ const AboutPage = () => {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-16 px-4 bg-white">
+        <section className="py-7 px-4 bg-white">
           <div className="container mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -603,7 +603,7 @@ const AboutPage = () => {
         </section>
 
         {/* Journey Timeline with 3D Effect - NEW DESIGN YOU LIKED */}
-        <section className="relative py-20 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
+        <section className="relative py-7 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
           <div className="container mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -641,7 +641,7 @@ const AboutPage = () => {
                           <div className="p-3 rounded-xl bg-gradient-to-br from-blue-600 to-orange-500 shadow-lg shadow-blue-500/30">
                             <milestone.icon className="w-6 h-6 text-white" />
                           </div>
-                          
+
                           <div className="flex-1">
                             <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-orange-400 text-transparent bg-clip-text mb-2">
                               {milestone.year}
@@ -674,7 +674,7 @@ const AboutPage = () => {
         </section>
 
         {/* Hiring Partners Section */}
-        <section className="py-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+        <section className="py-7 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
           <div className="container mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

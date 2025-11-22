@@ -141,17 +141,17 @@ const About = () => {
   const Card = ({
     children, className = "", ...props
   }: {
-    children: React.ReactNode; className?: string; [key: string]: any;
+    children: React.ReactNode; className?: string;[key: string]: any;
   }) => (
     <motion.div
-      whileHover={{ 
-        y: -15, 
+      whileHover={{
+        y: -15,
         scale: 1.02,
         rotateX: 5,
         rotateY: 2,
-        transition: { 
-          type: "spring", 
-          stiffness: 300, 
+        transition: {
+          type: "spring",
+          stiffness: 300,
           damping: 25,
           duration: 0.4
         }
@@ -162,37 +162,37 @@ const About = () => {
     >
       {/* Enhanced gradient overlay */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent via-white/5 to-slate-100/20 group-hover:from-blue-50/30 group-hover:via-white/20 group-hover:to-orange-50/30 transition-all duration-700"></div>
-      
+
       {/* Floating particles effect */}
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
         <motion.div
           className="absolute top-4 right-4 w-2 h-2 bg-blue-400 rounded-full"
-          animate={{ 
+          animate={{
             y: [0, -10, 0],
             opacity: [0, 1, 0],
             scale: [0.5, 1, 0.5]
           }}
-          transition={{ 
-            duration: 2, 
-            repeat: Infinity, 
-            delay: 0.5 
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            delay: 0.5
           }}
         />
         <motion.div
           className="absolute bottom-6 left-6 w-1.5 h-1.5 bg-orange-400 rounded-full"
-          animate={{ 
+          animate={{
             y: [0, -8, 0],
             opacity: [0, 1, 0],
             scale: [0.3, 0.8, 0.3]
           }}
-          transition={{ 
-            duration: 2.5, 
-            repeat: Infinity, 
-            delay: 1 
+          transition={{
+            duration: 2.5,
+            repeat: Infinity,
+            delay: 1
           }}
         />
       </div>
-      
+
       {children}
     </motion.div>
   );
@@ -200,7 +200,7 @@ const About = () => {
   const CardContent = ({ children }: { children: React.ReactNode }) => (
     <div className="p-6 md:p-8 relative z-10 flex flex-col h-full">{children}</div>
   );
-  
+
   // --- Simple Animation Variants for Single Line Animation ---
   const sectionVariants: Variants = {
     hidden: { opacity: 0, y: 100 },
@@ -230,7 +230,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      <section id="about" className="relative section-spacing-compact">
+      <section id="about" className="relative pt-0 pb-7">
         <div className="container mx-auto px-4 max-w-7xl">
           {/* UNIFIED HERO SECTION - REMOVED/COMMENTED OUT */}
           {/* <motion.div
@@ -344,14 +344,14 @@ const About = () => {
                 <motion.div
                   key={feature.title}
                   className="group cursor-pointer"
-                  whileHover={{ 
+                  whileHover={{
                     y: -10,
                     scale: 1.05,
                     rotateX: 5,
                     rotateY: 2,
-                    transition: { 
-                      type: "spring", 
-                      stiffness: 300, 
+                    transition: {
+                      type: "spring",
+                      stiffness: 300,
                       damping: 20,
                       duration: 0.3
                     }
@@ -361,21 +361,21 @@ const About = () => {
                   <div className="card-unified hover-lift">
                     <div className="card-content h-full flex flex-col items-center text-center">
                       <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-4 flex items-center justify-center">
-                        <img 
-                          src={feature.image} 
+                        <img
+                          src={feature.image}
                           alt={feature.title}
                           className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                         />
                       </div>
-                      
+
                       <h3 className="text-lg md:text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors duration-300">
                         {feature.title}
                       </h3>
-                      
+
                       <p className="text-sm md:text-base text-slate-600 leading-relaxed flex-grow group-hover:text-slate-700 transition-colors duration-300">
                         {feature.description}
                       </p>
-                      
+
                       <div className="w-0 h-1 bg-gradient-to-r from-blue-500 to-orange-500 mx-auto mt-4 rounded-full group-hover:w-16 transition-all duration-300"></div>
                     </div>
                   </div>
@@ -400,7 +400,7 @@ const About = () => {
               </Card>
             ))}
           </div> */}
-          
+
           {/* Enhanced Technologies Section */}
           <motion.div
             variants={sectionVariants}
@@ -419,13 +419,13 @@ const About = () => {
                 Our curriculum is built on the most in-demand technologies in the industry.
               </p>
             </motion.div>
-            
+
             {/* Continuous Advertisement-Style Animation */}
             <div className="relative overflow-hidden py-4">
               <motion.div
                 className="flex gap-4 md:gap-6 lg:gap-8"
-                animate={{ 
-                  x: [0, -1000] 
+                animate={{
+                  x: [0, -1000]
                 }}
                 transition={{
                   x: {
@@ -452,7 +452,7 @@ const About = () => {
                     </div>
                   </div>
                 ))}
-                
+
                 {/* Second set of cards for seamless loop */}
                 {techCards.map((logo, index) => (
                   <div
@@ -468,7 +468,7 @@ const About = () => {
                     </div>
                   </div>
                 ))}
-                
+
                 {/* Third set for extra smoothness */}
                 {techCards.map((logo, index) => (
                   <div

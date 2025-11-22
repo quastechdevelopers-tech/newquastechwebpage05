@@ -129,7 +129,7 @@ const Placement = () => {
     <>
       {/* <style dangerouslySetInnerHTML={{ __html: partnersStyles }} /> */}
 
-      <section id="placement" className="section-spacing-compact bg-gradient-to-br from-slate-50 via-white to-blue-50">
+      <section id="placement" className="py-7 bg-gradient-to-br from-slate-50 via-white to-blue-50">
         <div className="container mx-auto px-4 max-w-7xl">
           {/* Section Header with Tag */}
           <motion.div
@@ -145,8 +145,8 @@ const Placement = () => {
             <h3 className="text-2xl md:text-4xl lg:text-5xl font-extrabold
                bg-gradient-to-r from-blue-500 to-orange-400
                bg-clip-text text-transparent mb-3">
-  Quastech Stats at a Glance
-</h3>
+              QUASTECH Stats at a Glance
+            </h3>
 
             {/* <div className="h-0.5 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-blue-600  to-orange-500" /> */}
           </motion.div>
@@ -187,7 +187,7 @@ const Placement = () => {
           {/* 🤝 Hiring Partners - 3 Rows with Alternating Animations */}
           <div className="overflow-hidden bg-gradient-to-br from-blue-100 via-slate-100 to-orange-100 rounded-2xl py-8 md:py-10 px-4">
             <Subtitle text="Associated with 800+ Hiring partners" showBadge={true} />
-            
+
             {/* Row 1 - Slide Left */}
             <div className="relative overflow-hidden mb-4 md:mb-5">
               <motion.div

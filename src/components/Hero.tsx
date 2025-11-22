@@ -252,17 +252,30 @@ Please provide course details and guidance.
             >
               {/* Main Heading */}
               <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.6 }}
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 md:mb-6 text-white leading-[1.3] drop-shadow-lg"
-              >
-                <div className="block mb-3 md:mb-4 whitespace-nowrap">India's Leading and Trusted</div>
-                <div className="block bg-gradient-to-r from-blue-400 via-blue-300 to-orange-400 bg-clip-text text-transparent mb-3 md:mb-4 whitespace-nowrap pr-2" style={{ lineHeight: '1.5', paddingBottom: '0.5rem', display: 'inline-block' }}>
-                  IT Training Institute Offering
-                </div>
-                <div className="block whitespace-nowrap">Classroom & Online Training</div>
-              </motion.h1>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2, duration: 0.6 }}
+  className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold mb-5 md:mb-6 text-white drop-shadow-lg"
+  style={{ lineHeight: 1.3 }}
+>
+  <div className="block bg-gradient-to-r from-blue-300 via-blue-300 to-orange-500 bg-clip-text text-transparent mb-3 md:mb-4">
+    India&apos;s Leading and Trusted
+  </div>
+
+  <div className="block bg-gradient-to-r from-blue-300 via-blue-300 to-orange-500 bg-clip-text text-transparent mb-3 md:mb-4">
+    IT Training Institute Offering
+  </div>
+
+  <div className="block bg-gradient-to-r from-blue-300 via-blue-300 to-orange-500 bg-clip-text text-transparent mb-3 md:mb-4">
+    Classroom &amp; Online Training
+  </div>
+
+  <div className="block bg-gradient-to-r from-blue-300 via-blue-300 to-orange-500 bg-clip-text text-transparent">
+    with 100% Placement
+  </div>
+</motion.h1>
+
+
 
               {/* In Association With Section */}
               <motion.div

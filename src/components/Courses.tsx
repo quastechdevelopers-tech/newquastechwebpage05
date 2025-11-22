@@ -36,10 +36,10 @@ import { Label } from "@/components/ui/label";
 const Courses = () => {
   // Carousel features that rotate
   const carouselFeatures = [
-    { text: "Running Projects", icon: Rocket, color: "from-purple-600 to-purple-700" },
+    { text: "Running Projects", icon: Rocket, color: "from-blue-600 to-blue-700" },
     { text: "Unlimited Interviews", icon: Briefcase, color: "from-blue-600 to-blue-700" },
     { text: "Integrated Internship", icon: Award, color: "from-orange-500 to-orange-600" },
-    { text: "100% Job Assistance", icon: TrendingUp, color: "from-green-600 to-green-700" }
+    { text: "100% Job Assistance", icon: TrendingUp, color: "from-orange-500 to-orange-600" }
   ];
 
   const [currentFeature, setCurrentFeature] = useState(0);
@@ -78,7 +78,7 @@ const Courses = () => {
     {
       icon: Shield,
       title: "Software Testing with AI",
-      duration: "6-8 Months",
+      duration: "5 Month",
       trainingType: "Classroom & Online Training",
       batchTypes: "Weekday and Weekend Batches",
       features: [
@@ -94,7 +94,7 @@ const Courses = () => {
     {
       icon: Code,
       title: "Full Stack Java Development with AI",
-      duration: "7-9 Months",
+      duration: "9 Months",
       trainingType: "Classroom & Online Training",
       batchTypes: "Weekday and Weekend Batches",
       features: [
@@ -110,7 +110,7 @@ const Courses = () => {
     {
       icon: Code,
       title: "Full Stack Python Development with AI",
-      duration: "6-8 Months",
+      duration: "8 Months",
       trainingType: "Classroom & Online Training",
       batchTypes: "Weekday and Weekend Batches",
       features: [
@@ -126,7 +126,7 @@ const Courses = () => {
     {
       icon: Globe,
       title: "Full Stack .NET Development with AI",
-      duration: "7-9 Months",
+      duration: "9 Months",
       trainingType: "Classroom & Online Training",
       batchTypes: "Weekday and Weekend Batches",
       features: [
@@ -158,7 +158,7 @@ const Courses = () => {
     {
       icon: Brain,
       title: "Data Science with AI",
-      duration: "8-10 Months",
+      duration: "6 Months",
       trainingType: "Classroom & Online Training",
       batchTypes: "Weekday and Weekend Batches",
       features: [
@@ -174,7 +174,7 @@ const Courses = () => {
     {
       icon: Database,
       title: "Data Analytics with AI",
-      duration: "6-8 Months",
+      duration: "5 Months",
       trainingType: "Classroom & Online Training",
       batchTypes: "Weekday and Weekend Batches",
       features: [
